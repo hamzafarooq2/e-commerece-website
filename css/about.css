@@ -1,33 +1,65 @@
-.header .section {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  top: 50%;
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  text-align: center;
-  transform: translateY(-50%);
+*{
+  font-family: poppins;
+  /* background-color: rgb(241, 240, 234); */
 }
-.header .section h1 {
-  font-size: 60px;
-  font-weight: bold;
-}
+/* ===== Header Section ===== */
+.header{
+    border: 1px solid black;
+    /* margin: 0px 0px 40px 0px; */
+    position: relative;
+    height: 50vh;
+    background-image: url("/images/about_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+  }
+  .section h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .header .section{
+    top: 50%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .container-fluid{
+    background-color: rgb(241, 240, 234);
+    padding-top: 40px;
+  }
+  .below-header h3{
+    font-size: 25px;
+    font-weight: bold;
+  }
 
 /* ===== Below Header Section */
-.below-header img {
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
-  border: 2px solid gray;
-}
-.below-header img:hover {
-  box-shadow: 0 0 50px #807e7e;
-  transition: 1.5s;
-}
-.below-header .info {
-  margin-bottom: 20px;
-  text-align: justify;
-}
+  .below-header img{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  .below-header img:hover{
+    box-shadow: 0px 0px 0px 30px #ccc;
+    /* transition: 1.5s; */
+  }
+  .below-header .info{
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  .below-header .info button{
+    box-shadow: 0 0 50px #444040;
+    border: none;
+    color: black;
+    background-color: white;
+  }
+  .below-header .info button:hover{
+    background-color: black;
+    color: white;
+  }
