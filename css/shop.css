@@ -5,32 +5,25 @@
 }
 /* <===========Shop Header Image===========> */
 .header {
-  border: 1px solid black;
   margin: 0px 0px 40px 0px;
   position: relative;
   height: 50vh;
-  background-image: url("/Activewear/images/discount1.jpg");
+  background-image: url("../images/discount1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
 }
-.header:hover {
-  box-shadow: 0 0 50px #ccc;
-  transition: 0.9s;
-  background-color: rgb(205, 242, 194);
-}
+
 .header .section {
   color: white;
   font-size: 20px;
   font-weight: bold;
   top: 50%;
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   position: absolute;
   text-align: center;
   transform: translateY(-50%);
-  opacity: 1;
 }
 
 /* <===========Shop IMAGES===========> */
