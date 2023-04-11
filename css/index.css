@@ -1,0 +1,306 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f2f2;
+} */
+
+/* --------------------------products--- */
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: Ubuntu;
+}
+/* <===========CAROUSEL===========> */
+.carousel-item img {
+  width: 80%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel-control button span{
+  opacity: 1;
+
+}
+/* <===========FEATURED IMAGES===========> */
+.featured-images h1,
+.new-arival h1 {
+  padding-top: 70px;
+  text-align: center;
+}
+.featured-images p,
+.new-arival p {
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+}
+.products .area {
+  /* background-color: rgb(241, 240, 234); */
+  /* border: 0px solid rgb(241, 240, 234); */
+  /* border: 1px solid ;
+  border-color: wheat;
+  border-top: none; */
+  /* border-bottom-left-radius: 8px; */
+  /* border-bottom-right-radius: 8px; */
+
+  /* background-color: rgb(241, 240, 234); */
+}
+.area p{
+  font-style: italic;
+}
+.products{
+  box-shadow: 0 0 10px #ccc;
+}
+.products:hover {
+  box-shadow: 0 0 50px #ccc;
+  /* transition: 0.9s;
+  background-color: rgb(205, 242, 194); */
+}
+
+.products .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.shop a .fa{
+  border-radius: 50%;
+  
+  border: 1px solid #ccc ;
+  
+  font-size: 20px;
+  
+  background-color: white;
+  color: black;
+}
+.shop .fa:hover {
+  color: white;
+  background-color: black;
+
+  /* transition: 0.9s; */
+
+}
+.featured-images .products img,
+.new-arival .products img {
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(241, 240, 234);
+  /* border-radius: 10px; */
+}
+.products p {
+  text-align: left;
+  font-size: 20px;
+  padding: 0px 0px 0px 4px;
+  color: rgb(165, 164, 160);
+  /* background-color: aquamarine; */
+}
+.products h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+.rating {
+  color: gold;
+  font-size: 12px;
+}
+/* <===========DISCOUNT SECTION 1===========> */
+.discount1 {
+  /* border: 1px solid black; */
+  margin-left: 58px;
+  margin-right: 58px;
+  box-shadow: 0 0 10px #ccc;
+  position: relative;
+  height: 30vh;
+  background-image: url("/images/Newslatter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* opacity: 0.7; */
+}
+.discount1:hover {
+  box-shadow: 0 0 50px #ccc;
+  transition: 0.9s;
+  /* background-color: rgb(205, 242, 194); */
+  /* opacity: 0.8; */
+}
+.discount1 .section {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  top: 50%;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+/* .discount1 .section:hover {
+  transition: 0.9s;
+  color: white(0, 0, 0);
+  font-size: 31px;
+  background-color: rgba(226, 119, 119, 0.137);
+} */
+.discount1 .section button {
+  border: none;
+  color: black;
+  font-size: 18px;
+  background-color: white;
+}
+.discount1 .section button:hover {
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  /* transition-duration: 1s; */
+}
+
+/* <===========NEW ARIVAL SECTION===========> */
+.new-arival {
+  margin: 10px 0px 16px 0px;
+}
+/* <===========BANNER SECTION===========> */
+/* .banner{
+  
+} */
+.banner img {
+  width: 100%;
+  height: 67vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .product {
+  background-color: rgb(241, 240, 234);
+  /* border: 3px solid rgb(241, 240, 234); */
+  margin: 2px;
+  display: flex;
+}
+.product:hover {
+  box-shadow: 0 0 50px #ccc;
+  transition: 0.9s;
+  background-color: #afacac;
+  color: white;
+}
+.product1 {
+  position: relative;
+  height: 67vh;
+  flex-basis: 90%;
+}
+/* .product1 img {
+  flex-basis: 25%;
+  background-color: orange;
+} */
+/* .product .image img {
+  background-color: transparent;
+} */
+.product1 .info {
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  transform: translateY(-50%);
+}
+.product1 .info span {
+  color: rgb(165, 164, 160);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+.product1 .info h3 {
+  font-weight: bold;
+}
+.product1 .info p {
+  text-align: left;
+  font-size: 20px;
+  padding: 5px 0px 2px 2px;
+  font-weight: 400;
+}
+.product1 button{
+  color: black;
+  background-color: white;
+  border: none;
+}
+.product1 button:hover {
+  color: white;
+  background-color: black;
+  transition: 0.9s;
+}
+
+/* ------------------Newsletter------------ */
+.newsletter {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+.newsletter h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.newsletter form {
+  display: inline-block;
+}
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.newsletter button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #5900ff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    padding: 20px;
+  }
+
+  .newsletter h2 {
+    font-size: 20px;
+  }
+
+  .newsletter input[type="email"] {
+    width: 200px;
+    margin-right: 0;
+
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .discount1 .section button {
+    /* display: none; */
+    padding: 10px;
+    font-size: 14px;
+  }
+  .discount1 .section {
+    border: none;
+    color: white;
+    font-size: 14px;
+    /* background-color: white; */
+  }
+  .discount1 .section button:hover {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    /* transition-duration: 1s; */
+  }
+}
