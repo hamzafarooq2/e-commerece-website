@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1f2005eb13.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <i class="fa-solid fa-bars"></i>
+
+      <div class="nav-items" id="nav-items">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./shop.html">Products</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./cartPage.html">Cart</a></li>
+        </ul>
+
+        <form action="#">
+          <input type="search" class="search-data" placeholder="Search" />
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="section">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+    <div class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.2068390843074!2d74.30140211479694!3d31.57337535168263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191ca4502a7b33%3A0x22514efee6d62865!2sGovt.%20Islamia%20College%20Civil%20Lines!5e0!3m2!1sen!2s!4v1645479886919!5m2!1sen!2s"
+      ></iframe>
+    </div>
+    <div class="address_form">
+      <div class="row">
+        <div class="address_col col-md-12">
+          <div class="info">
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>XYZ Road,ABC Building Jamal Chowk</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </span>
+          </div>
+          <div class="info">
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+92 3343434434</h5>
+              <p>Monday to Friday, 06:00am to 06:00pm</p>
+            </span>
+          </div>
+          <div class="info">
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>abc323f@gmail.com</h5>
+              <p>E-Mail Me For Query</p>
+            </span>
+          </div>
+        </div>
+        <div class="address_col1 col-md-12">
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input type="email" placeholder="Enter email Address" required />
+            <input type="text" placeholder="Enter Your Subject" required />
+            <textarea rows="10" placeholder="Message" required></textarea>
+            <button type="button" class="btn btn-success">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- -----------Footer--------- -->
+    <div class="footer">
+      <h2>Activewear Ecomerce Website</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eaque
+        error quod earum sequi saepe reprehenderit labore ipsa,
+        <br />dignissimos recusandae expedita, hic inventore laboriosam
+        consectetur.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa fa-heart"></i> By Easy Tutorials</p>
+    </div>
+    <script>
+      menu = document.querySelector(".fa-bars");
+      menu.onclick = function () {
+        navBarItems = document.querySelector(".nav-items");
+        navBarItems.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: wheat;
+}
+.footer h3 {
+  font-weight: 600;
+}
+.icons .fa {
+  color: rgb(255, 8, 0);
+  padding: 18px 0px;
+  margin: 0 13px;
+  cursor: pointer;
+}
+.fa-heart {
+  color: rgb(255, 8, 0);
+}
+/* Media Queries for Small Screen(Footer Section named as section1) */
+@media (max-width: 700px) {
+  .footer p {
+    padding: 30px;
+    font-size: 18px;
+    color: grey;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .navbar {
+    position: absolute;
+    background: grey;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+}

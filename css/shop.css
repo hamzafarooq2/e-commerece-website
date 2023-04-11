@@ -1,0 +1,94 @@
+* {
+  /* margin: 0; */
+  padding: 0px;
+  font-family: Poppins;
+}
+/* <===========Shop Header Image===========> */
+.header {
+  border: 1px solid black;
+  margin: 0px 0px 40px 0px;
+  position: relative;
+  height: 50vh;
+  background-image: url("/Activewear/images/discount1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+.header:hover {
+  box-shadow: 0 0 50px #ccc;
+  transition: 0.9s;
+  background-color: rgb(205, 242, 194);
+}
+.header .section {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  top: 50%;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+/* <===========Shop IMAGES===========> */
+.products {
+  background-color: white;
+  border: 3px solid rgb(241, 240, 234);
+  border-radius: 10px;
+}
+.products:hover {
+  box-shadow: 0 0 50px #ccc;
+  transition: 0.9s;
+  background-color: rgb(205, 242, 194);
+}
+.products .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.shop .fa {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  background-color: rgb(241, 240, 234);
+}
+.shop .fa:hover {
+  background-color: black;
+  color: white;
+  transition: 0.9s;
+}
+.featured-images .products img,
+.new-arival .products img {
+  width: 100%;
+  height: 38vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(241, 240, 234);
+  border-radius: 10px;
+}
+.products p {
+  text-align: left;
+  font-size: 20px;
+  padding: 20px 0px 0px 2px;
+  color: rgb(163, 161, 145);
+}
+.products h3 {
+  font-weight: bold;
+  color: green;
+}
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+}
+.rating {
+  color: gold;
+}
+/* <===========Neigation Buttons===========> */
+.buttons {
+  text-align: center;
+  margin: 30px 5px 30px 5px;
+}
