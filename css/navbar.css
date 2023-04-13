@@ -10,7 +10,10 @@ nav .logo {
   color: #fff;
   font-size: 30px;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: -1;
+}
+nav .logo span {
+  color: orangered;
 }
 nav .nav-items {
   display: flex;
@@ -66,7 +69,7 @@ nav form button {
 nav form button:hover {
   background: #e63600;
 }
-.fa-bars {
+nav .fa-bars {
   display: none;
 }
 /* ---------------- */
