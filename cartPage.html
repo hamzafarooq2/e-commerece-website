@@ -12,7 +12,8 @@
   </head>
   <body>
     <nav>
-      <div class="logo">LOGO</div>
+      <div class="logo"><span>ACTIVE</span>WEAR</div>
+
       <i class="fa-solid fa-bars"></i>
 
       <div class="nav-items" id="nav-items">
@@ -82,10 +83,9 @@
     <script>
       menu = document.querySelector(".fa-bars");
       menu.onclick = function () {
-        navbar = document.querySelector(".navbar");
-        navbar.classList.toggle("active");
+        navBarItems = document.querySelector(".nav-items");
+        navBarItems.classList.toggle("active");
       };
     </script>
-
   </body>
 </html>
