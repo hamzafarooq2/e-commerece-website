@@ -17,11 +17,11 @@
 
       <div class="nav-items" id="nav-items">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./shop.html">Products</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./cartPage.html">Cart</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cartPage.html">Cart</a></li>
         </ul>
 
         <form action="#">
@@ -29,75 +29,70 @@
           <button type="submit" class="fas fa-search"></button>
         </form>
       </div>
-    </nav>
-    <center><p class="cart">ADD TO CART</p></center>
 
-    <table>
-      <tr class="first-row">
-        <th>REMOVE</th>
-        <th>IMAGE</th>
-        <th>PRODUCT</th>
-        <th>PRICE</th>
-        <th>QUANTITY</th>
-        <th>SUBTOTAL</th>
-      </tr>
-      <tr class="main-row">
-        <td>
-          <a href="#"><i class="fa-solid fa-trash"></i></a>
-        </td>
-        <td class="pic"><img src="images/1ss.webp" ; /></td>
-        <td>T-Shirts</td>
-        <td>$118.19</td>
-        <td><input type="number" /></td>
-        <td>$118.19</td>
-        <td></td>
-      </tr>
-      <tr class="main-row hov">
-        <td>
-          <a href="#"><i class="fa-solid fa-trash"></i></a>
-        </td>
-        <td class="pic"><img src="images/2ss.webp" ; /></td>
-        <td>T-Shirts</td>
-        <td>$118.19</td>
-        <td><input type="number" /></td>
-        <td>$118.19</td>
-        <td></td>
-      </tr>
-      <tr class="main-row hov">
-        <td>
-          <a href="#"><i class="fa-solid fa-trash"></i></a>
-        </td>
-        <td class="pic"><img src="images/3ss.webp" ; /></td>
-        <td>T-Shirts</td>
-        <td>$118.19</td>
-        <td><input type="number" /></td>
-        <td>$118.19</td>
-        <td></td>
-      </tr>
-    </table>
-    <!-- ------------Footer----- -->
-    <div class="footer">
-      <h2>Activewear Ecomerce Website</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eaque
-        error quod earum sequi saepe reprehenderit labore ipsa,
-        <br />dignissimos recusandae expedita, hic inventore laboriosam
-        consectetur.
-      </p>
-      <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
-      <p>Made With <i class="fa fa-heart"></i> By Easy Tutorials</p>
+      <!-- <i class="fa-solid fa-bars" onclick="showMenu"></i> -->
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+    </nav>
+    <p id="demo"></p>
+    <div class="container">
+      <table>
+        <tr class="first-row">
+          <th>REMOVE</th>
+          <th>IMAGE</th>
+          <th>PRODUCT</th>
+          <th>PRICE</th>
+          <th>QUANTITY</th>
+          <th>SUBTOTAL</th>
+        </tr>
+        <tr class="main-row">
+          <td>
+            <a href="#"><i class="fa-solid fa-trash"></i></a>
+          </td>
+          <td class="pic"><img src="images/1ss.webp" ; /></td>
+          <td>T-Shirts</td>
+          <td>$118.19</td>
+          <td><input type="number" /></td>
+          <td>$118.19</td>
+          <td></td>
+        </tr>
+        <tr class="main-row hov">
+          <td>
+            <a href="#"><i class="fa-solid fa-trash"></i></a>
+          </td>
+          <td class="pic"><img src="images/2ss.webp" ; /></td>
+          <td>T-Shirts</td>
+          <td>$118.19</td>
+          <td><input type="number" /></td>
+          <td>$118.19</td>
+          <td></td>
+        </tr>
+        <tr class="main-row hov">
+          <td>
+            <a href="#"><i class="fa-solid fa-trash"></i></a>
+          </td>
+          <td class="pic"><img src="images/3ss.webp" ; /></td>
+          <td>T-Shirts</td>
+          <td>$118.19</td>
+          <td><input type="number" /></td>
+          <td>$118.19</td>
+          <td></td>
+        </tr>
+      </table>
     </div>
+
     <script>
       menu = document.querySelector(".fa-bars");
       menu.onclick = function () {
-        navBarItems = document.querySelector(".nav-items");
-        navBarItems.classList.toggle("active");
+        navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
       };
+    </script>
+    <script>
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+
+      var x = document.getElementById("demo");
+      x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
     </script>
   </body>
 </html>
