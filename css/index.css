@@ -1,12 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-}
-body {
-  background: #f2f2f2;
-} */
 
 /* --------------------------products--- */
 * {
@@ -15,6 +6,11 @@ body {
   font-family: Ubuntu;
 }
 /* <===========CAROUSEL===========> */
+.tooltip{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
 .carousel-item img {
   width: 80%;
   height: 80vh;
@@ -24,7 +20,6 @@ body {
 }
 .carousel-control button span{
   opacity: 1;
-
 }
 /* <===========FEATURED IMAGES===========> */
 .featured-images h1,
@@ -37,17 +32,7 @@ body {
   padding: 10px 5px 10px 5px;
   text-align: center;
 }
-.products .area {
-  /* background-color: rgb(241, 240, 234); */
-  /* border: 0px solid rgb(241, 240, 234); */
-  /* border: 1px solid ;
-  border-color: wheat;
-  border-top: none; */
-  /* border-bottom-left-radius: 8px; */
-  /* border-bottom-right-radius: 8px; */
 
-  /* background-color: rgb(241, 240, 234); */
-}
 .area p{
   font-style: italic;
 }
