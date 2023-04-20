@@ -11,30 +11,42 @@
     ></script>
   </head>
   <body>
-    <nav>
+    <nav class="navbar1">
       <div class="logo"><span>ACTIVE</span>WEAR</div>
 
-      <i class="fa-solid fa-bars"></i>
-
-      <div class="nav-items" id="nav-items">
+      <div class="nav-items">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Products</a></li>
+          <li class="dropdown">
+            <a href="#">Products</a>
+            <!-- <div class="dropdown-menu">
+              <ul>
+                <div class="dropdown-menu1">
+                  <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div> -->
+          </li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="cartPage.html">Cart</a></li>
         </ul>
-
-        <form action="#">
-          <input type="search" class="search-data" placeholder="Search" />
-          <button type="submit" class="fas fa-search"></button>
-        </form>
       </div>
+      <form action="#">
+        <input type="search" class="search-data" placeholder="Search" />
+        <button type="submit" class="fas fa-search"></button>
+      </form>
 
-      <!-- <i class="fa-solid fa-bars" onclick="showMenu"></i> -->
-      <!-- <i class="fa-solid fa-xmark"></i> -->
+      <i class="fa-solid fa-bars"></i>
     </nav>
-    <div class="container">
+
+    <div class="main-container"></div>
+
+    <div class="table-container">
       <table>
         <tr class="first-row">
           <th>REMOVE</th>
@@ -79,12 +91,33 @@
         </tr>
       </table>
     </div>
+    <script>
+      $(".dropdown").hover(
+        function () {
+          $(this).find(".dropdown-menu").show();
+        },
+        function () {
+          $(this).find(".dropdown-menu").hide();
+        }
+      );
+    </script>
+    <script>
+      $(".dropdown1").hover(
+        function () {
+          $(this).find(".dropdown-menu1").show();
+        },
+        function () {
+          $(this).find(".dropdown-menu1").hide();
+        }
+      );
+    </script>
 
     <script>
       menu = document.querySelector(".fa-bars");
+
       menu.onclick = function () {
-        navBarItems = document.querySelector(".nav-items");
-        navBarItems.classList.toggle("active");
+        navbar = document.querySelector(".navbar1");
+        navbar.classList.toggle("active");
       };
     </script>
   </body>

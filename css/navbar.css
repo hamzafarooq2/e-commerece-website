@@ -1,63 +1,88 @@
-nav {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+/* .dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #171c24;
+
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+.dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 33px;
+} */
+
+
+.navbar1 {
   background: #171c24;
   display: flex;
   align-items: center;
   height: 70px;
-  justify-content: space-around;
-  padding: 0 100px;
+  justify-content: space-between;
+  padding: 0 80px;
 }
-nav .logo {
+.navbar1 .logo {
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: -1;
 }
-nav .logo span {
+.navbar1 .logo span {
   color: orangered;
 }
-nav .nav-items {
+
+.navbar1 .nav-items {
   display: flex;
-  align-items: baseline;
-  margin-top: 8px;
+  align-items: center;
 }
-nav .nav-items ul {
+.navbar1 .nav-items ul {
+  margin: 0 0 0 0;
+
   display: flex;
 }
-nav .nav-items li {
+.navbar1 .nav-items li {
   list-style: none;
   padding: 0 15px;
 }
 
-nav .nav-items li a {
+.navbar1 .nav-items li a {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
 }
-nav .nav-items li a:hover {
+.navbar1 .nav-items li a:hover {
   color: #ff3d00;
 }
 
-nav form {
+.navbar1 form {
   display: flex;
-  height: 40px;
+  height: 34px;
   background: #1e232b;
   min-width: 18%;
   border-radius: 4px;
   border: 1px solid rgba(155, 155, 155, 0.2);
 }
 
-nav form .search-data {
+.navbar1 form .search-data {
   height: 100%;
-  width: 100%;
+  width: 180px;
   padding: 0 10px;
   color: #fff;
   font-weight: 500;
   background: none;
   border: none;
   font-size: 17px;
+  outline: none;
 }
-nav form button {
+.navbar1 form button {
   background: #ff3d00;
   border: none;
   cursor: pointer;
@@ -66,27 +91,34 @@ nav form button {
   border-radius: 2px;
   padding: 0 12px;
 }
-nav form button:hover {
+.navbar1 form button:hover {
   background: #e63600;
 }
-nav .fa-bars {
+.navbar1 .fa-bars {
   display: none;
 }
 /* ---------------- */
-@media only screen and (max-width: 1124px) {
-  nav {
-    padding: 0 30px;
-  }
-}
+
 @media only screen and (max-width: 1024px) {
-  nav .fa-bars {
+  .navbar1 .fa-bars {
     display: block;
     color: white;
     font-size: 24px;
     cursor: pointer;
   }
-  nav .nav-items {
-    height: 0;
+  .navbar1 .nav-items {
+    display: none;
+  }
+
+  .navbar1 form {
+    position: absolute;
+    right: 120px;
+  }
+  .navbar1.active .nav-items {
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
     position: absolute;
     overflow: hidden;
     top: 60px;
@@ -95,26 +127,75 @@ nav .fa-bars {
     width: 100%;
     background-color: #171c24;
   }
-
-  nav .nav-items.active ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-items.active {
-    z-index: 1000;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-items.active form {
+  .navbar1.active .nav-items ul {
     margin-top: 12px;
-  }
-
-  .nav-items.active ul li {
-    margin-top: 16px;
+    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .navbar1.active .nav-items ul li {
+    margin-top: 16px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .navbar1 {
+    padding: 0 30px;
+  }
+  .navbar1 form {
+    position: absolute;
+    right: 70px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .navbar1 form {
+    display: none;
+  }
+  .navbar1 form .search-data {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 17px;
+    outline: none;
+  }
+  .navbar1.active .nav-items ul {
+    margin-bottom: 70px;
+  }
+  .navbar1.active form {
+    display: flex;
+    align-content: center;
+    position: relative;
+    width: 180px;
+    top: 284px;
+    z-index: 1000;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .navbar1 .logo {
+    font-size: 20px;
+    margin-left: 16px;
+  }
+
+  .navbar1 .fa-bars {
+    font-size: 20px;
+    margin-right: 16px;
+  }
+  .navbar1 {
+    padding: 0;
+  }
+
+  .navbar1.active form {
+    display: flex;
+
+    position: relative;
+    top: 268px;
+    right: 48px;
+  }
+  .navbar1 .nav-items ul li a {
+    font-size: 16px;
   }
 }

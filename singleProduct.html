@@ -22,6 +22,26 @@
   </head>
 
   <body>
+    <nav class="navbar1">
+      <div class="logo"><span>ACTIVE</span>WEAR</div>
+
+      <div class="nav-items">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cartPage.html">Cart</a></li>
+        </ul>
+      </div>
+      <form action="#">
+        <input type="search" class="search-data" placeholder="Search" />
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+
     <div class="container-fluid">
       <div class="row picture main">
         <div class="col-lg-6 col-md-4 col-sm-4 col-xs-10 image">
@@ -100,5 +120,14 @@
       </div>
       <p>Made With <i class="fa fa-heart"></i> By Easy Tutorials</p>
     </div>
+
+    <script>
+      menu = document.querySelector(".fa-bars");
+
+      menu.onclick = function () {
+        navbar = document.querySelector(".navbar1");
+        navbar.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
