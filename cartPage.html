@@ -9,28 +9,18 @@
       src="https://kit.fontawesome.com/ab0bcd8ca8.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </head>
+
   <body>
+    <!-- -----Nav -->
     <nav class="navbar1">
       <div class="logo"><span>ACTIVE</span>WEAR</div>
 
       <div class="nav-items">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#">Products</a>
-            <!-- <div class="dropdown-menu">
-              <ul>
-                <div class="dropdown-menu1">
-                  <ul>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Kids</a></li>
-                  </ul>
-                </div>
-              </ul>
-            </div> -->
-          </li>
+          <li><a href="./shop.html">Products</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="cartPage.html">Cart</a></li>
@@ -43,74 +33,66 @@
 
       <i class="fa-solid fa-bars"></i>
     </nav>
+    <!-- -------------Table-- -->
+    <center>
+      <div class="table-container">
+        <table>
+          <tr class="first-row">
+            <th>REMOVE</th>
+            <th>IMAGE</th>
+            <th>PRODUCT</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+            <th>SUBTOTAL</th>
+          </tr>
+          <div id="target-div">
+            <div id="row">
+              <tr class="main-row">
+                <td>
+                  <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </td>
+                <td class="pic"><img src="images/1ss.webp" ; /></td>
+                <td>T-Shirts</td>
+                <td>$118.19</td>
+                <td><input type="number" /></td>
+                <td>$118.19</td>
+                <td></td>
+              </tr>
+            </div>
+          </div>
+        </table>
+      </div>
+    </center>
 
-    <div class="main-container"></div>
-
-    <div class="table-container">
-      <table>
-        <tr class="first-row">
-          <th>REMOVE</th>
-          <th>IMAGE</th>
-          <th>PRODUCT</th>
-          <th>PRICE</th>
-          <th>QUANTITY</th>
-          <th>SUBTOTAL</th>
-        </tr>
-        <tr class="main-row">
-          <td>
-            <a href="#"><i class="fa-solid fa-trash"></i></a>
-          </td>
-          <td class="pic"><img src="images/1ss.webp" ; /></td>
-          <td>T-Shirts</td>
-          <td>$118.19</td>
-          <td><input type="number" /></td>
-          <td>$118.19</td>
-          <td></td>
-        </tr>
-        <tr class="main-row hov">
-          <td>
-            <a href="#"><i class="fa-solid fa-trash"></i></a>
-          </td>
-          <td class="pic"><img src="images/2ss.webp" ; /></td>
-          <td>T-Shirts</td>
-          <td>$118.19</td>
-          <td><input type="number" /></td>
-          <td>$118.19</td>
-          <td></td>
-        </tr>
-        <tr class="main-row hov">
-          <td>
-            <a href="#"><i class="fa-solid fa-trash"></i></a>
-          </td>
-          <td class="pic"><img src="images/3ss.webp" ; /></td>
-          <td>T-Shirts</td>
-          <td>$118.19</td>
-          <td><input type="number" /></td>
-          <td>$118.19</td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
-    <script>
-      $(".dropdown").hover(
-        function () {
-          $(this).find(".dropdown-menu").show();
-        },
-        function () {
-          $(this).find(".dropdown-menu").hide();
-        }
-      );
-    </script>
-    <script>
-      $(".dropdown1").hover(
-        function () {
-          $(this).find(".dropdown-menu1").show();
-        },
-        function () {
-          $(this).find(".dropdown-menu1").hide();
-        }
-      );
-    </script>
+    <!-- ---------------Form-------- ------>
+    
+      <div class="form-container">
+        <h2>Register</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+          <button type="submit" onclick="displayData()">Submit</button>
+        </form>
+      </div>
+    
 
     <script>
       menu = document.querySelector(".fa-bars");
@@ -119,6 +101,48 @@
         navbar = document.querySelector(".navbar1");
         navbar.classList.toggle("active");
       };
+
+      // -------------Saving data of Form
+    </script>
+    <script>
+      function displayData() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+
+        const formData = {
+          name: name,
+          email: email,
+          password: password,
+          phone: phone,
+          address: address,
+        };
+
+        console.log(formData);
+      }
+      // const form = document.getElementById("register-form");
+
+      // form.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+
+      //   const name = document.getElementById("name").value;
+      //   const email = document.getElementById("email").value;
+      //   const password = document.getElementById("password").value;
+      //   const phone = document.getElementById("phone").value;
+      //   const address = document.getElementById("address").value;
+
+      //   const formData = {
+      //     name: name,
+      //     email: email,
+      //     password: password,
+      //     phone: phone,
+      //     address: address,
+      //   };
+
+      //   console.log(formData);
+      // });
     </script>
   </body>
 </html>
