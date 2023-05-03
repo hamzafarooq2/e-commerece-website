@@ -12,7 +12,7 @@
   </head>
 
   <body onload="productsLoad()">
-    <center>
+    <div class="main">
       <div class="table-container">
         <table>
           <thead>
@@ -27,44 +27,44 @@
           </thead>
           <tbody id="productRow"></tbody>
         </table>
-        <h5>Grand Total : $123</h5>
+        <div class="grandPrice">
+          <span>Grand Total :<p id="grandPrice"></p></span>
+
+        </div>
       </div>
-    </center>
+    
 
-    <!-- ---------------Form-------- ------>
+      <!-- ---------------Form-------- ------>
 
-    <div class="form-container">
-      <h2>Register</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required />
-        </div>
-        <div class="form-group">
-          <label for="address">Address:</label>
-          <textarea id="address" name="address" required></textarea>
-        </div>
-        <button type="submit" onclick="showData()">Submit</button>
-      </form>
+      <div class="form-container">
+        <h2>Register</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+          <button type="submit" onclick="showData()">Submit</button>
+        </form>
+      </div>
     </div>
 
-    <script>
- 
-
-      
-    </script>
+    <script></script>
     <script src="./script.js"></script>
   </body>
 </html>
