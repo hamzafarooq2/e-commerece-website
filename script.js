@@ -28,6 +28,7 @@ cartButton.addEventListener("click", function () {
 });
 
 function productsLoad() {
+  var grandTotal = 0;
   let products = window.localStorage.getItem("products") || "[]";
   products = JSON.parse(products);
   console.log(products);
@@ -39,11 +40,17 @@ function productsLoad() {
           <td>${p.title}</td>
           <td>${p.price}</td>
           <td>${p.quantity} </td>
-          <td>${p.quantity * p.price}</td> 
-          <td></td>
+          <td>${p.quantity * p.price}</td>
+          
         </tr>
+        
      
   `;
+  // document.getElementById("grandPrice").innerHTML= 1;
+    {
+      grandTotal += p.quantity * p.price;
+    }
+    document.getElementById("grandPrice").innerHTML= grandTotal;
   });
 }
 
