@@ -19,24 +19,155 @@
     <title>About</title>
   </head>
   <body>
-    <nav class="navbar1">
-      <div class="logo"><span>ACTIVE</span>WEAR</div>
-
-      <div class="nav-items">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="cartPage.html">Cart</a></li>
-        </ul>
+    <nav class="menu navbar navbar-dark bg-dark d-block">
+      <div class="container">
+        <div class="internal-section d-flex flex-row justify-content-between w-100 align-items-center">
+          <div class="logo align-items-center">
+            <a class="navbar-brand" href="#"><span class="text-danger">ACTIVE</span>WEAR</a>
+          </div>
+          <!-- <div class="nav-menu"  id="navbarTogglerDemo03"> -->
+          <div class="nav-menu d-none d-sm-block">
+            <ul class="navbar-nav menu-main d-flex flex-row align-items-center">
+              <li class="nav-item p-1 mx-1">
+                <a class="nav-link text-light" href="index.html">Home</a>
+              </li>
+              <li class="menu-item-has-children nav-item p-1 mx-1 text-light">
+                <div class="product-color">
+                  <a>Products<i class="fa fa-angle-down"></i></a>
+                </div>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">Men's Fashion</h4>
+                    <ul>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/TShirt.png')">
+                          T-Shirts</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/jeans.jpg')">Jeans</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/shirt.jpg')">Shirts</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/jacket.jpg')">Jacket</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/coat.jpg')">Coat</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/tie.jpg')">Tie</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/cap.jpg')">Baseball Cap</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Women's Fashion</h4>
+                    <ul>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/TShirt.png')">
+                          T-Shirts</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/jeans.jpg')">Jeans</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/shirt.jpg')">Shirts</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/jacket.jpg')">Jacket</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Women's Fashion</h4>
+                    <ul>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/TShirt.png')">
+                          T-Shirts</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/jeans.jpg')">Jeans</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/shirt.jpg')">Shirts</a>
+                      </li>
+                      <li class="py-1">
+                        <a href="#" onmouseover="changeImg('/images/jacket.jpg')">Jacket</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <img src="/images/New-Arival 3.jpg" alt=" Product Image" id="slider" />
+                  </div>
+                </div>
+              </li>
+  
+              <li class="nav-item p-1 mx-1 text-light">
+                <a class="nav-link text-light" href="about.html">About</a>
+              </li>
+              <li class="nav-item p-1 mx-1">
+                <a class="nav-link text-light" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item p-1 mx-1">
+                <a class="nav-link text-light" href="cartPage.html">Cart</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-form d-none d-lg-block">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+              <button class="btn btn-danger" type="submit">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <button class="navbar-toggler d-block d-sm-none text-danger" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+  
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <span class="text-danger">ACTIVE</span>WEAR
+            </h3>
+            <button type="button" class="btn btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body z-6">
+            <div class="nav-menu">
+              <ul class="navbar-nav">
+                <li class="nav-item p-2 mx-1">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item p-2 mx-1">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item p-2 mx-1">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item p-2 mx-1">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item p-2 mx-1">
+                  <a class="nav-link" href="#">Cart</a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search here...." aria-label="Search" />
+              <button class="btn btn-danger" type="submit">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-      <form action="#">
-        <input type="search" class="search-data" placeholder="Search" />
-        <button type="submit" class="fas fa-search"></button>
-      </form>
-
-      <i class="fa-solid fa-bars"></i>
     </nav>
 
     <div class="header">
