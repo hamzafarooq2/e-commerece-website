@@ -3,15 +3,22 @@
   padding: 0;
   font-family: sans-serif;
 }
-.container {
+
+.table-container {
   overflow-x: auto;
+  margin-top: 60px;
+  /* width: 800px; */
 }
+.table-container h5 {
+  margin: 40px 0 40px 0;
+  
+}
+
 table {
-  margin:  100px auto 0 auto;
+  /* margin: 100px auto 0 auto; */
   border-collapse: collapse;
   /* table-layout: fixed; */
   /* white-space: nowrap; */
-
 }
 tr th {
   font-size: small;
@@ -52,4 +59,62 @@ table td button {
   border-radius: 4px;
   background-color: red;
   color: wheat;
+}
+/* --------------Form---- */
+.form-container {
+  width: 400px;
+  /* margin: auto; */
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 90px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #7ac9d1;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7ac9d1;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #5aa9b5;
 }
