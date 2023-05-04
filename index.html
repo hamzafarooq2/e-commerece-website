@@ -38,6 +38,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
   <title>Home</title>
+ 
 </head>
 
 <body>
@@ -56,7 +57,7 @@
             </li>
             <li class="menu-item-has-children nav-item p-1 mx-1 text-light">
               <div class="product-color">
-                <a>Products<i class="fa fa-angle-down"></i></a>
+                <a href="shop.html">Products<i class="fa fa-angle-down"></i></a>
               </div>
               <div class="sub-menu mega-menu mega-menu-column-4">
                 <div class="list-item">
@@ -134,9 +135,6 @@
             <li class="nav-item p-1 mx-1">
               <a class="nav-link text-light" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item p-1 mx-1">
-              <a class="nav-link text-light" href="cartPage.html">Cart</a>
-            </li>
           </ul>
         </div>
         <div class="nav-form d-none d-lg-block">
@@ -152,7 +150,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-
+<!-- On Small Screen -->
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
@@ -166,20 +164,18 @@
           <div class="nav-menu">
             <ul class="navbar-nav">
               <li class="nav-item p-2 mx-1">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item p-2 mx-1">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="shop.html">Products</a>
               </li>
               <li class="nav-item p-2 mx-1">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item p-2 mx-1">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item p-2 mx-1">
-                <a class="nav-link" href="#">Cart</a>
-              </li>
+              
             </ul>
           </div>
           <form class="d-flex mt-3" role="search">
@@ -195,7 +191,7 @@
 
   <!-- -------------------------- -->
   <!-- Carousel Section-->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel" data-interval="4000">
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active d-none d-sm-block"></button>
@@ -206,16 +202,17 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="/images/Carousel 1.jpg" alt="Carousel 1" class="d-block w-100" data-toggle="tooltip"
-          title="Banner Image 1" data-placement="bottom" />
+          title="Banner Image 1" data-placement="bottom"  />
       </div>
       <div class="carousel-item">
         <img src="/images/Carousel 2.jpg" alt="Carousel 2" class="d-block w-100" data-toggle="tooltip"
-          title="Banner Image 2" data-placement="bottom" />
+          title="Banner Image 2" />
       </div>
       <div class="carousel-item">
         <img src="/images/Carousel 3.jpg" alt="Carousel 3" class="d-block w-100" data-toggle="tooltip"
           title="Banner Image 3" data-placement="bottom" />
       </div>
+      
     </div>
     <!-- Left and right controls/icons -->
     <div class="carousel-control">
@@ -227,13 +224,14 @@
       </button>
     </div>
   </div>
-
   <!-- The Carousel Ends -->
+
+
   <div class="container">
     <!--Featured Products Section-->
     <div class="featured-images">
       <div class="row">
-        <div class="col-lg-12 carousel-items" data-tooltip="Tooltip text here">
+        <div class="col-lg-12 carousel-items">
           <h1>Featured Products</h1>
         </div>
       </div>
@@ -246,7 +244,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 xs-12 my-3">
           <div class="products">
             <div class="image">
-              <a href="single product page.html"><img src="/images/shirt_1.png" alt="vector-image 1" /></a>
+              <a href="single product page.html"><img src="/images/shirt_2.png" alt="vector-image 1" onclick="show()" id="showImage" /></a>
             </div>
             <div class="area p-1">
               <p>nike</p>
@@ -425,7 +423,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 xs-12 my-3">
           <div class="products">
             <div class="image">
-              <a href="#"><img src="/images/shirt_1.png" alt="vector-image 1" /></a>
+              <a href="single product page.html"><img src="/images/shirt_1.png" alt="vector-image 1" /></a>
             </div>
             <div class="area p-1">
               <p>nike</p>
@@ -442,7 +440,7 @@
                   <div class="price">78$</div>
                 </div>
                 <div class="shop">
-                  <a href="#"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
+                  <a href="single product page.html"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -451,7 +449,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 xs-12 my-3">
           <div class="products">
             <div class="image">
-              <a href="#"><img src="/images/shirt_2.png" alt="vector-image 1" /></a>
+              <a href="single product page.html"><img src="/images/shirt_2.png" alt="vector-image 1" /></a>
             </div>
             <div class="area p-1">
               <p>nike</p>
@@ -468,7 +466,7 @@
                   <div class="price">78$</div>
                 </div>
                 <div class="shop">
-                  <a href="#"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
+                  <a href="single product page.html"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -477,7 +475,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 xs-12 my-3">
           <div class="products">
             <div class="image">
-              <a href="#"><img src="/images/shirt_3.png" alt="vector-image 1" /></a>
+              <a href="single product page.html"><img src="/images/shirt_3.png" alt="vector-image 1" /></a>
             </div>
             <div class="area p-1">
               <p>nike</p>
@@ -494,7 +492,7 @@
                   <div class="price">78$</div>
                 </div>
                 <div class="shop">
-                  <a href="#"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
+                  <a href="single product page.html"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -503,7 +501,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 xs-12 my-3">
           <div class="products">
             <div class="image">
-              <a href="#"><img src="/images/shirt_1.png" alt="vector-image 1" /></a>
+              <a href="single product page.html"><img src="/images/shirt_1.png" alt="vector-image 1" /></a>
             </div>
             <div class="area p-1">
               <p>nike</p>
@@ -520,7 +518,7 @@
                   <div class="price">78$</div>
                 </div>
                 <div class="shop">
-                  <a href="#"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
+                  <a href="single product page.html"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -529,7 +527,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 xs-12 my-3">
           <div class="products">
             <div class="image">
-              <a href="#"><img src="/images/shirt_2.png" alt="vector-image 1" /></a>
+              <a href="single product page.html"><img src="/images/shirt_2.png" alt="vector-image 1" /></a>
             </div>
             <div class="area p-1">
               <p>nike</p>
@@ -546,7 +544,7 @@
                   <div class="price">78$</div>
                 </div>
                 <div class="shop">
-                  <a href="#"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
+                  <a href="single product page.html"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -555,7 +553,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 xs-12 my-3">
           <div class="products">
             <div class="image">
-              <a href="#"><img src="/images/shirt_3.png" alt="vector-image 1" /></a>
+              <a href="single product page.html"><img src="/images/shirt_3.png" alt="vector-image 1" /></a>
             </div>
             <div class="area p-1">
               <p>nike</p>
@@ -572,7 +570,7 @@
                   <div class="price">78$</div>
                 </div>
                 <div class="shop">
-                  <a href="#"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
+                  <a href="single product page.html"><i class="fa fa-cart-arrow-down p-2" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -589,7 +587,7 @@
               <div class="product p-2">
                 <div class="product1">
                   <div class="info">
-                    <span>crazy deals</span>
+                    <p><span>crazy deals</span></p>
                     <h3>Buy 1 Get 1 Free</h3>
                     <p>The Best Clasic Dress is on Sale.</p>
                     <button type="button" class="btn btn-success">
@@ -606,13 +604,13 @@
               <div class="product p-2">
                 <div class="product1">
                   <div class="info">
-                    <span>crazy deals</span>
-                    <h3>buy 1 get 1 free</h3>
+                    <p><span>crazy deals</span></p>
+                    <h3>Buy 1 Get 1 Free</h3>
                     <p>The best classic dress is on sale</p>
                     <button type="button" class="btn btn-success">
                       Collection
                     </button>
-                  </div>
+                  </div>  
                 </div>
                 <div class="image">
                   <img src="images/Vector_8.png" alt="vector-image 1" />
