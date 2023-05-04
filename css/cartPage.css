@@ -4,21 +4,21 @@
   font-family: sans-serif;
 }
 
-.table-container {
-  overflow-x: auto;
-  margin-top: 60px;
-  /* width: 800px; */
+.main {
+  display: flex;
+  margin: 100px 0 0 0;
+  justify-content: space-evenly;
 }
-.table-container h5 {
-  margin: 40px 0 40px 0;
-  
+
+.table-container {
+  padding-top: 12px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  /* height: 300px; */
+  overflow: auto;
 }
 
 table {
-  /* margin: 100px auto 0 auto; */
   border-collapse: collapse;
-  /* table-layout: fixed; */
-  /* white-space: nowrap; */
 }
 tr th {
   font-size: small;
@@ -60,11 +60,22 @@ table td button {
   background-color: red;
   color: wheat;
 }
+/* ----------------- */
+.grandPrice span {
+  display: flex;
+  align-items: center;
+  color: teal;
+  margin: 28px 0 28px 28px;
+
+  font-weight: 600;
+}
+.grandPrice span p {
+  margin-left: 12px;
+  color: black;
+}
 /* --------------Form---- */
 .form-container {
-  width: 400px;
-  /* margin: auto; */
-  margin-top: 25px;
+  width: 300px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -78,16 +89,12 @@ table td button {
 
 .form-group {
   margin-bottom: 15px;
-  display: flex;
-  align-items: center;
+  padding-right: 20px;
 }
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  margin-right: 90px;
+.form-group input,
+textarea {
+  margin-top: 5px;
 }
-
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -109,7 +116,7 @@ button[type="submit"] {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #7ac9d1;
+  background-color: teal;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -117,4 +124,28 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #5aa9b5;
+}
+/* -------Media Query--- */
+
+@media only screen and (max-width: 980px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-container {
+    width: auto;
+    margin: 0 auto 50px auto;
+  }
+  .form-container {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .table-container {
+    margin: 0 10px 50px 10px;
+  }
+  .form-container {
+    margin-bottom: 50px;
+  }
 }
