@@ -1,11 +1,3 @@
-// -----------fOR rESPONSIVE nAVBAR----------
-// menu = document.querySelector(".fa-bars");
-
-// menu.onclick = function () {
-//   navbar = document.querySelector(".navbar1");
-//   navbar.classList.toggle("active");
-// };
-// --------------------------------
 var cartButton = document.getElementById("cart-btn");
 cartButton.addEventListener("click", function () {
   const productTitle = document.getElementById("productTitle").innerText.trim();
@@ -14,12 +6,12 @@ cartButton.addEventListener("click", function () {
   // const productImage = document.getElementById("product-main-image");
 
   let products = window.localStorage.getItem("products") || "[]";
+
   products = JSON.parse(products); // converted to javascript object
   const newProduct = {
     title: productTitle,
     price: productPrice,
     quantity: productQuantity,
-    // image: productImage,
   };
   products.push(newProduct);
 
@@ -41,20 +33,15 @@ function productsLoad() {
           <td>${p.price}</td>
           <td>${p.quantity} </td>
           <td>${p.quantity * p.price}</td>
-          
         </tr>
-        
-     
-  `;
-  // document.getElementById("grandPrice").innerHTML= 1;
-    {
-      grandTotal += p.quantity * p.price;
-    }
-    document.getElementById("grandPrice").innerHTML= grandTotal;
+      `;
+
+    grandTotal += p.quantity * p.price;
+    document.getElementById("grandPrice").innerHTML = grandTotal;
   });
 }
 
-// -----------Displaying Form Data------
+// -----------Displaying userInfo Data------
 
 function showData() {
   const userName = document.getElementById("name").value;
@@ -73,6 +60,5 @@ function showData() {
     address: userAddress,
   };
   userInfo.push(newUser);
-
   window.localStorage.setItem("userInfo", JSON.stringify(userInfo)); // one is key and other is value
 }
