@@ -5,6 +5,7 @@
   right: inherit;
   width: 100%;
   height: auto;
+  margin-left: 0px;
 }
 
 .navbar-brand {
@@ -15,6 +16,11 @@
 .nav-item {
   font-size: 19px;
 }
+.product-color a{
+  text-decoration: none;
+  color: white;
+}
+
 
 
 
@@ -54,11 +60,12 @@
 .nav-menu>ul>li .sub-menu>ul>li>a:hover {
   color: #ea4636;
 }
-
+@media(min-width:992px){
 .menu-item-has-children:hover .sub-menu {
   margin-top: 0;
   visibility: visible;
   opacity: 1;
+}
 }
 .nav-menu>ul>li .sub-menu.mega-menu-column-4{
   max-width: 1100px;
@@ -105,4 +112,10 @@
 	max-width: 100%;
   width: 100%;
   vertical-align: middle;
+}
+
+/* --------------- */
+
+@media(min-width: 768px) {
+  
 }
