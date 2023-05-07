@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0px;
   font-family: Ubuntu;
+  box-sizing: border-box;
 }
 /* <===========CAROUSEL===========> */
 .tooltip{
@@ -274,6 +275,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+  
   .discount1 .section button {
     /* display: none; */
     padding: 10px;
