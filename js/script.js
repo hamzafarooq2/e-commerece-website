@@ -1,11 +1,14 @@
-
 // --------------
 var cartButton = document.getElementById("cart-btn");
 cartButton.addEventListener("click", function () {
+  const params = new URL(location).searchParams;
+  // const image = params.get("image");
   const productTitle = document.getElementById("productTitle").innerText.trim();
   const productPrice = document.getElementById("productPrice").innerText.trim();
   const productQuantity = document.getElementById("quantity").value;
-  // const productImage = document.getElementById("product-main-image");
+  // const productImage =(document.getElementById(
+  //   "product-main-image"
+  // ).innerHTML = `<img src ='./images/${image}' />`;
 
   let products = window.localStorage.getItem("products") || "[]";
 
@@ -14,6 +17,8 @@ cartButton.addEventListener("click", function () {
     title: productTitle,
     price: productPrice,
     quantity: productQuantity,
+    productId: new Date().valueOf(),
+    // image,
   };
   products.push(newProduct);
 
@@ -35,12 +40,25 @@ function productsLoad() {
           <td>${p.price}</td>
           <td>${p.quantity} </td>
           <td>${p.quantity * p.price}</td>
+          <td><button style="cursor:pointer"  onclick="deleteRow('${
+            p.productId
+          }')">Delete</button></td>
         </tr>
       `;
 
     grandTotal += p.quantity * p.price;
     document.getElementById("grandPrice").innerHTML = grandTotal;
   });
+}
+function deleteRow(productId) {
+  console.log(productId);
+  const storedData = localStorage.getItem("products"); // Retrieve existing data
+  const parsedData = JSON.parse(storedData); // Parse existing data into a JS object
+  const rowIndex = parsedData.findIndex((row) => row.productId == productId); // Find the index of the row to delete
+  parsedData.splice(rowIndex, 1); // Remove the row from the array
+  const updatedData = JSON.stringify(parsedData); // Stringify the updated data
+  localStorage.setItem("products", updatedData); // Store the updated data back into local storage
+  location.reload();
 }
 
 // -----------Displaying userInfo Data------
