@@ -40,9 +40,9 @@ function productsLoad() {
           <td>${p.price}</td>
           <td>${p.quantity} </td>
           <td>${p.quantity * p.price}</td>
-          <td><button style="cursor:pointer"  onclick="deleteRow('${
+          <td onclick="deleteRow('${
             p.productId
-          }')">Delete</button></td>
+          }')"> <i class="fa-solid fa-trash"></i></></td>
         </tr>
       `;
 
@@ -64,6 +64,7 @@ function deleteRow(productId) {
 // -----------Displaying userInfo Data------
 
 function showData() {
+  alert("Your information is saved. Thank You!");
   const userName = document.getElementById("name").value;
   const userEmail = document.getElementById("email").value;
   const userPassword = document.getElementById("password").value;
@@ -81,4 +82,8 @@ function showData() {
   };
   userInfo.push(newUser);
   window.localStorage.setItem("userInfo", JSON.stringify(userInfo)); // one is key and other is value
+}
+
+function confirmOrder() {
+  alert("Your order is Placed. Thank You!");
 }
