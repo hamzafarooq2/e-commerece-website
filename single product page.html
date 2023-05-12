@@ -22,7 +22,8 @@
           <div class="col-6">
             <div class="product-image">
               <div class="product-image-main">
-                <img src="/images/product page 1.avif" alt="" id="showImage2" />
+                <img src="./images/shirt_6.png">
+                
               </div>
             </div>
           </div>
@@ -151,6 +152,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const imageUrl = localStorage.getItem("image_url");
+      const imgDiv = document.getElementsByClassName('product-image-main"');
+      const image = document.createElement("img");
+      image.src = imageUrl;
+      imgDiv.appendChild(image);
+    </script>
 
     <script src="./js/script.js"></script>
   </body>
